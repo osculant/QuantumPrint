@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuantumPrint Support | Professional Device Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <style>
+        body { font-family: "Open Sans", sans-serif; }
+        .service-box {
+            border-radius: 16px;
+            border: 1px solid #e0f2fe;
+            background-color: #f8fafc;
+            transition: all 0.3s ease;
+        }
+        .service-box:hover {
+            background-color: #ffffff;
+            border-color: #7dd3fc;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #3b82f6;
+            transition: width 0.3s;
+        }
+        .nav-link:hover::after { width: 100%; }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- HEADER -->
+    <header class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <img src="https://png.pngtree.com/png-clipart/20231029/original/pngtree-printing-machine-logo-vector-illustration-to-generative-ai-png-image_13454382.png" 
+                     alt="Logo" class="w-9 h-9">
+                <span class="text-2xl font-bold text-gray-900 tracking-tight">QuantumPrint</span>
+            </div>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold text-gray-600">
+                <a href="#home" class="nav-link hover:text-blue-600">Home</a>
+                <a href="#about" class="nav-link hover:text-blue-600">About us</a>
+                <a href="#services" class="nav-link hover:text-blue-600">Services</a>
+                <a href="#reviews" class="nav-link hover:text-blue-600">Reviews</a>
+                <a href="#contact" class="nav-link hover:text-blue-600">Contact us</a>
+            </nav>
+
+            <!-- Mobile Hamburger -->
+            <button id="hamburger" class="md:hidden text-gray-700 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-6 py-6">
+            <nav class="flex flex-col space-y-6 text-lg font-medium text-gray-700">
+                <a href="#home" class="hover:text-blue-600">Home</a>
+                <a href="#about" class="hover:text-blue-600">About us</a>
+                <a href="#services" class="hover:text-blue-600">Services</a>
+                <a href="#reviews" class="hover:text-blue-600">Reviews</a>
+                <a href="#contact" class="hover:text-blue-600">Contact us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="relative min-h-[calc(100dvh-120px)] flex items-center overflow-hidden pt-16">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=1920" 
+                 class="w-full h-full object-cover" alt="Hero Background">
+            <div class="absolute inset-0 bg-blue-900/60"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <p class="text-white text-lg sm:text-xl font-medium mb-4 max-w-2xl mx-auto">
+                Delivering dependable printer service solutions for home and businesses.
+            </p>
+            <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold text-white leading-tight">
+                Professional Printer
+            </h1>
+            <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold text-blue-300 leading-tight">
+                Services
+            </h1>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7">
+                    <span class="text-blue-400 font-semibold text-sm">ABOUT US</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3">QuantumPrintSupport</h2>
+                    <div class="mt-8 space-y-6 text-gray-600 text-base sm:text-lg leading-relaxed">
+                        <p>QuantumPrintSupport is a trusted provider of professional printer service and maintenance services across the United States of America and Canada.</p>
+                        <p>We specialize in delivering fast, reliable, and cost-effective solutions for all types of printers used in homes, offices, and businesses.</p>
+                        <p>Our skilled technicians handle paper jams, print quality issues, connectivity errors, and hardware failures. We also offer Annual Maintenance Contracts (AMC).</p>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-sm">
+                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=600" 
+                             class="rounded-3xl shadow-2xl w-full" alt="Technician">
+                        <div class="absolute -bottom-5 -right-5 bg-blue-600 text-white text-xs font-bold px-6 py-3 rounded-2xl hidden lg:block">
+                            24/7 SUPPORT
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-12">Why <span class="text-blue-400">Choose Us</span></h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="border border-blue-100 p-8 rounded-3xl flex flex-col items-center hover:shadow-lg transition">
+                    <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/100/2563eb/external-printer-office-flatart-icons-outline-flatarticons.png" class="w-20 h-20 mb-6" alt="">
+                    <h4 class="font-bold text-lg">Network & Wireless Printer Setup</h4>
+                </div>
+                <div class="border border-blue-100 p-8 rounded-3xl flex flex-col items-center hover:shadow-lg transition">
+                    <img src="https://img.icons8.com/ios/100/2563eb/maintenance.png" class="w-20 h-20 mb-6" alt="">
+                    <h4 class="font-bold text-lg">Routine Maintenance & Inspections</h4>
+                </div>
+                <div class="border border-blue-100 p-8 rounded-3xl flex flex-col items-center hover:shadow-lg transition">
+                    <img src="https://img.icons8.com/ios/100/2563eb/headset.png" class="w-20 h-20 mb-6" alt="">
+                    <h4 class="font-bold text-lg">24/7 Printer Help</h4>
+                </div>
+                <div class="border border-blue-100 p-8 rounded-3xl flex flex-col items-center hover:shadow-lg transition">
+                    <img src="https://img.icons8.com/ios/100/2563eb/engineer.png" class="w-20 h-20 mb-6" alt="">
+                    <h4 class="font-bold text-lg">Expert Technicians</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="bg-blue-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-3 gap-10 text-center">
+            <div><h3 class="text-6xl font-extrabold text-gray-900">1,200+</h3><p class="mt-2 font-medium">Printers Repaired & Installed</p></div>
+            <div><h3 class="text-6xl font-extrabold text-gray-900">850+</h3><p class="mt-2 font-medium">Satisfied Customers</p></div>
+            <div><h3 class="text-6xl font-extrabold text-gray-900">10+</h3><p class="mt-2 font-medium">Years of Technical Experience</p></div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">Our <span class="text-blue-400">Services</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="service-box p-8"><h4 class="text-xl font-bold mb-4">Printer Maintenance Services</h4><p class="text-gray-600">Complete troubleshooting for ink-jet, laser, and multi-function printers.</p></div>
+                <div class="service-box p-8"><h4 class="text-xl font-bold mb-4">Printer Installation & Setup</h4><p class="text-gray-600">Professional installation, network configuration, and wireless setup.</p></div>
+                <div class="service-box p-8"><h4 class="text-xl font-bold mb-4">Paper Jam & Error Fixes</h4><p class="text-gray-600">Quick resolution for paper jams and error codes.</p></div>
+                <div class="service-box p-8"><h4 class="text-xl font-bold mb-4">Ink & Toner Issues</h4><p class="text-gray-600">Cartridge recognition, print quality, and smudging fixes.</p></div>
+                <div class="service-box p-8"><h4 class="text-xl font-bold mb-4">Annual Maintenance</h4><p class="text-gray-600">Priority support and preventive maintenance contracts.</p></div>
+                <div class="service-box p-8"><h4 class="text-xl font-bold mb-4">Network & Wireless Printing</h4><p class="text-gray-600">WiFi setup and secure remote printing.</p></div>
+                <div class="service-box p-8"><h4 class="text-xl font-bold mb-4">Printer Upgrade & Modification</h4><p class="text-gray-600">Memory upgrades, tray expansions, and firmware updates.</p></div>
+                <div class="service-box p-8"><h4 class="text-xl font-bold mb-4">Printer Data Security</h4><p class="text-gray-600">Security analysis and firewall protection.</p></div>
+                <div class="service-box p-8"><h4 class="text-xl font-bold mb-4">On-Site & Technical Assistance</h4><p class="text-gray-600">Remote and on-site emergency support.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" class="py-16 sm:py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl sm:text-4xl font-extrabold">Our <span class="text-blue-500">Customers</span></h2>
+                <p class="mt-4 text-gray-600">Trusted by over 850+ businesses and home offices.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Review 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm">
+                    <div class="flex text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-gray-700">"Our office printer had a persistent paper jam... QuantumPrint found the issue in 15 minutes. Truly life-savers!"</p>
+                    <div class="flex items-center gap-4 mt-8">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=100&h=100" class="w-12 h-12 rounded-full" alt="">
+                        <div><h5 class="font-bold">Sarah Jenkins</h5><p class="text-xs text-blue-500">Operations Manager, JL Law</p></div>
+                    </div>
+                </div>
+                <!-- Review 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm">
+                    <div class="flex text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-gray-700">"Setting up our wireless printing network was a nightmare... They integrated all 12 workstations seamlessly."</p>
+                    <div class="flex items-center gap-4 mt-8">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100&h=100" class="w-12 h-12 rounded-full" alt="">
+                        <div><h5 class="font-bold">David Chen</h5><p class="text-xs text-blue-500">IT Director, TechFlow</p></div>
+                    </div>
+                </div>
+                <!-- Review 3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm">
+                    <div class="flex text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-gray-700">"We've been on their Annual Maintenance Contract for 2 years. Never have downtime anymore."</p>
+                    <div class="flex items-center gap-4 mt-8">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=100&h=100" class="w-12 h-12 rounded-full" alt="">
+                        <div><h5 class="font-bold">Maria Garcia</h5><p class="text-xs text-blue-500">Admin Head, Garcia Logistics</p></div>
+                    </div>
+                </div>
+                <!-- Review 4 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm">
+                    <div class="flex text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-gray-700">"The remote support was patient and walked me through every step. Excellent for non-techy people!"</p>
+                    <div class="flex items-center gap-4 mt-8">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=100&h=100" class="w-12 h-12 rounded-full" alt="">
+                        <div><h5 class="font-bold">Robert Wilson</h5><p class="text-xs text-blue-500">Freelance Designer</p></div>
+                    </div>
+                </div>
+                <!-- Review 5 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm">
+                    <div class="flex text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-gray-700">"Fastest on-site response... Their tech arrived within 40 minutes to save the day."</p>
+                    <div class="flex items-center gap-4 mt-8">
+                        <img src="https://images.unsplash.com/photo-1598550874175-4d0fe4a2c90b?auto=format&fit=crop&q=80&w=100&h=100" class="w-12 h-12 rounded-full" alt="">
+                        <div><h5 class="font-bold">Amanda Lee</h5><p class="text-xs text-blue-500">Project Lead, BuildRight</p></div>
+                    </div>
+                </div>
+                <!-- Review 6 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm">
+                    <div class="flex text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-gray-700">"Transparent pricing and genuine parts. QuantumPrint is the gold standard for printer care."</p>
+                    <div class="flex items-center gap-4 mt-8">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=100&h=100" class="w-12 h-12 rounded-full" alt="">
+                        <div><h5 class="font-bold">Kevin Miller</h5><p class="text-xs text-blue-500">Small Business Owner</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 bg-white rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
+                <!-- Left Blue Panel -->
+                <div class="lg:col-span-5 bg-blue-600 p-10 lg:p-16 text-white relative">
+                    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-blue-500 rounded-full opacity-20"></div>
+                    <h2 class="text-3xl font-extrabold mb-6">Get In Touch <span class="text-blue-200">With Our Experts</span></h2>
+                    <p class="text-blue-100 mb-12">Have a printer emergency? Our technicians usually respond within 30 minutes.</p>
+                    <div class="space-y-8">
+                        <div class="flex gap-4">
+                            <div class="bg-blue-500 p-4 rounded-2xl"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg></div>
+                            <div><h4 class="font-bold">Our Location</h4><p class="text-blue-100">4021 Preston Rd Ste 510<br>Plano, Texas 75093</p></div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="bg-blue-500 p-4 rounded-2xl"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
+                            <div><h4 class="font-bold">Support Hours</h4><p class="text-blue-100">Mon - Fri: 8am – 8pm<br>Weekend Emergency Support 24/7</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="lg:col-span-7 p-10 lg:p-16">
+                    <form id="contactForm" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Full Name</label>
+                                <input type="text" required class="w-full bg-gray-50 border border-gray-200 rounded-2xl px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Email Address</label>
+                                <input type="email" required class="w-full bg-gray-50 border border-gray-200 rounded-2xl px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Printer Model / Issue Type</label>
+                            <select class="w-full bg-gray-50 border border-gray-200 rounded-2xl px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                                <option>LaserJet Repair</option>
+                                <option>InkJet Support</option>
+                                <option>Network Configuration</option>
+                                <option>Maintenance Plan (AMC)</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Message</label>
+                            <textarea rows="5" placeholder="Describe the error code or problem..." class="w-full bg-gray-50 border border-gray-200 rounded-3xl px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-5 rounded-3xl shadow-lg transition">Send Message & Get Support</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-sm">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-blue-600 rounded-xl flex items-center justify-center text-white font-black text-2xl">Q</div>
+                    <span class="font-bold text-xl">QuantumPrint Support</span>
+                </div>
+                <div class="flex gap-8 text-gray-500">
+                    <a href="#" class="hover:text-blue-600">Privacy Policy</a>
+                    <a href="#" class="hover:text-blue-600">Terms of Service</a>
+                    <a href="#" class="hover:text-blue-600">Sitemap</a>
+                </div>
+                <p class="text-gray-400">© 2026 QuantumPrint Support Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- THANK YOU MODAL -->
+    <div id="thankYouModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 bg-black/60">
+        <div id="modalCard" class="bg-white rounded-3xl p-10 max-w-sm w-full text-center scale-95 opacity-0 transition-all duration-300">
+            <div class="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Message Sent!</h3>
+            <p class="text-gray-600 mb-8">Our technical team will get back to you soon.</p>
+            <button onclick="closeModal()" class="w-full bg-blue-600 text-white font-bold py-4 rounded-2xl hover:bg-blue-700">Great, thanks!</button>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('hamburger').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Form Submission + Modal
+        const form = document.getElementById('contactForm');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const modal = document.getElementById('thankYouModal');
+            const modalCard = document.getElementById('modalCard');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            setTimeout(() => {
+                modalCard.classList.remove('scale-95', 'opacity-0');
+                modalCard.classList.add('scale-100', 'opacity-100');
+            }, 10);
+            form.reset();
+        });
+
+        function closeModal() {
+            const modal = document.getElementById('thankYouModal');
+            const modalCard = document.getElementById('modalCard');
+            modalCard.classList.add('scale-95', 'opacity-0');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }, 300);
+        }
+    </script>
+</body>
+</html>
